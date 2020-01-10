@@ -21,6 +21,7 @@ class GetSourceItemsBySkusAndSortedSourceTest extends TestCase
 
     protected function setUp()
     {
+        $this->markTestSkipped('Skip to debug');
         parent::setUp();
 
         $this->subject = Bootstrap::getObjectManager()->get(GetInStockSourceItemsBySkusAndSortedSource::class);

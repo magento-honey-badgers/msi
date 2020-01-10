@@ -64,6 +64,7 @@ class SourceDeductionForBundleProductsOnDefaultStockTest extends TestCase
 
     protected function setUp()
     {
+        $this->markTestSkipped('Skip to debug');
         $this->searchCriteriaBuilder = Bootstrap::getObjectManager()->get(SearchCriteriaBuilder::class);
         $this->orderRepository = Bootstrap::getObjectManager()->get(OrderRepositoryInterface::class);
         $this->getSourceItemBySku = Bootstrap::getObjectManager()->get(GetSourceItemsBySkuInterface::class);
